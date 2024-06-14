@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Planificación de Rutas de Transporte Público</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <main>
+        <h1>Planificación de Rutas de Transporte Público</h1>
+        <div class="inputs">
+            <div class="input-group">
+                <label for="rutaA">Ingrese ruta A:</label>
+                <input type="text" id="rutaA" placeholder="Ingrese ruta A">
+            </div>
+            <div class="input-group">
+                <label for="rutaB">Ingrese ruta B:</label>
+                <input type="text" id="rutaB" placeholder="Ingrese ruta B">
+            </div>
+            <div class="input-group">
+                <label for="peso">Ingrese peso:</label>
+                <input type="number" id="peso" placeholder="Ingrese peso">
+            </div>
+        </div>
+        <div class="actions">
+            <button id="addConexion">Agregar Conexión</button>
+            <button id="bfs">Búsqueda en Profundidad</button>
+            <button id="bfs">Ruta más corta</button>
+        </div>
+        <div class="output">
+            <label for="output">Resultado de la Búsqueda en Profundidad:</label>
+            <input type="text" id="output" readonly>
+            <label for="output">Resultado de la Ruta más corta:</label>
+            <input type="text" id="output" readonly>
+        </div>
+    </main>
+    
+    <script src="index.js"></script>
+</body>
+</html>
